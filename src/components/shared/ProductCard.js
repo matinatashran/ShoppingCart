@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
-import styled from 'styled-components';
 
 // style
 import style from './productCard.module.css';
@@ -13,7 +12,7 @@ import { quantityCount } from '../../helper/functions';
 import { addItem, removeItem, increaseItem, decreaseItem } from '../../redux/cart/cartActions';
 
 
-const ProductCard = ({ id, title, image, price, category, discount, productData }) => {
+const ProductCard = ({ id, image, price, category, discount, productData }) => {
 
     const state = useSelector(state => state.cartState)
     const dispatchCart = useDispatch();
