@@ -1,0 +1,141 @@
+.cartContainer{
+    width: 100%;
+    min-height: 80vh;
+    font-family: Righteous;
+}
+
+.title{
+    text-align: left;
+    margin: 33px;
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: #1c4b8b;
+}
+
+.cartHeader{
+    width: 950px;
+    border-radius: 40px;
+    margin: 0 auto 50px auto;
+    border-top: 3px solid #ff4400;
+    background-color: #fff;
+    position: sticky;
+    top: 55px;
+    z-index: 99;
+}
+
+.cartInfo{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    margin: 0 auto 40px auto;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #1c4b8b;
+    border-bottom: 2px solid #1c4b8b;
+}
+
+.cartInfo span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #3c3c3c;
+}
+
+.cartInfoBtns{
+    display: flex;
+    justify-content: center;
+}
+
+.clearBtn, 
+.checkoutBtn, 
+.fakeButton{
+    padding: 7px 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+    border: 2px solid #1c4b8b;
+    font-size: 1rem;
+    font-family: Righteous;
+    color: #1c4b8b;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clearBtn:hover, 
+.checkoutBtn:hover{
+    transform: scale(1.05);
+}
+
+.fakeButton{
+    border-color: #b1b1b1;
+    color: #b1b1b1;
+    cursor: auto;
+}
+
+.fakeButton:hover{
+    transform: none;
+}
+
+.showProducts{
+    width: 950px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .title{
+        font-size: 2.4rem;
+    }
+
+    .cartHeader, 
+    .showProducts{
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 2rem;
+    }
+
+    .cartHeader,
+    .showProducts{
+        width: 470px;
+    }
+
+    .cartInfo{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .cartHeader, .showProducts{
+        width: 90%;
+    }
+
+    .cartHeader{
+        top: 40px;
+    }
+
+    .cartInfo{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1rem;
+    }
+
+    .cartInfo span{
+        font-size: 0.9rem;
+    }
+
+    .clearBtn, 
+    .checkoutBtn, 
+    .fakeButton{
+        padding: 5px 10px;
+        margin: 0 5px 10px 5px;
+        font-size: 0.9rem;
+    }
+}

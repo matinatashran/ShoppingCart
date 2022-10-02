@@ -1,0 +1,43 @@
+.subCategoryContainer{
+    width: 100%;
+}
+
+.title{
+    width: 300px;
+    height: 50px;
+    line-height: 45px;
+    border: 3px solid #ff4400;
+    border-right: none;
+    margin: 0 20px;
+    text-align: left;
+    padding: 0 20px;
+    border-radius: 30px 0 0 30px;
+    color: #212121;
+    font-family: Righteous;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.productsBox{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px){
+    .title{
+        width: 260px;
+        height: 45px;
+        line-height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px){
+    .title{
+        width: 190px;
+    }
+}
